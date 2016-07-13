@@ -1,0 +1,151 @@
+<!doctype html>
+
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8" />
+        <title>---Page title goes here---</title>
+        
+    </head>
+    
+    <body>
+        
+       <!-- //Step 1
+        <button onclick="writeMessage()" >Click Me</button>
+        <script type ="text/javascript">
+            
+            function writeMessage() {
+                alert("I have been clicked");
+            }
+        </script> -->
+        
+        <!--//Step 2
+        
+        <button id="button">Click Me</button>
+        
+        <script>
+        
+            var myButton = document.getElementById("button");
+            myButton.onclick = function (){
+                alert("I have been clicked");
+            }
+        
+        </script> -->
+        
+       <!--  //STEP 3
+        
+        <button id="button">Click Me</button>
+        <script type ="text/javascript">
+        
+        button.addEventListener("click", writeMessage, false);
+            
+            function writeMessage() {
+                window.alert("I have been clicked");
+            }
+        
+        </script> -->
+        
+      <!--  //STEP 4
+        
+         <button id="button">Click Me</button>
+        <script type ="text/javascript">
+       
+        button.addEventListener("click", function() {
+            alert("I have been clicked");
+            
+        } , false ); -->
+           
+          <!-- //STEP 5
+           
+           <script>
+               document.addEventListener("DOMContentLoaded", init, false);
+               function init() {
+                   button.addEventListener("click", writeMessage, false);
+               }
+               
+               function writeMessage() {
+                   alert("I have been clicked");
+               }
+        </script>
+          <input id="button" type="button" value="Click Me">    -->
+           
+          <!--  //STEP 6
+            <a href="http://www.google.com" id="redirect"> Visit Google </a>
+            
+            <script>
+             redirect.addEventListener("click" , function(event){
+                 event.preventDefault();
+                 alert("You have clicked the link");
+             });
+        </script> -->
+          
+        <!-- STEP 7  
+        <form>
+        <input id="textBox" type="text" name="textbox">
+        <button id="button">Click Me</button>
+        </form>  
+        <script>
+           button.addEventListener("click", function () {
+            button.disabled = true;
+            var textInput = document.getElementById("textBox").value;
+            alert(textInput);
+        }, false);
+        </script> -->
+        
+        <!-- STEP 8
+
+        <button id="popUp">Click Me</button>
+        <script>
+        
+        popUp.addEventListener("click", function () { 
+            window.open('newpage.html', 'gg', 'width=300, height=300, resizable=yes');
+       }, false );
+        </script>
+
+        
+        
+        <button id="startButton">Start</button>
+        <button id="stopButton">Stop</button>
+        <script type ="text/javascript">
+           var myStartButton = document.getElementById("startButton");
+            myStartButton.addEventListener("click", function(){console.log("Learning Javacript is Fun"); })
+             
+             setInterval (myStartButton, 2000);
+            
+           
+            </script>
+           -->
+        <!-- STEP 9 
+         
+    <button id="startButton">Start</button>
+    <button id="stopButton">Stop</button>
+        <script>  
+           
+            startButton.addEventListener("click", boo, false)
+            function boo() { console.log('Learning Javascript is Fun!'); }
+                        var id= setInterval(boo, 2000); 
+        
+            stopButton.addEventListener("click", function (){
+                clearInterval(id);
+            })
+        </script>  -->
+        
+        <!-- Step 10
+
+        <select id = "list">
+        <option>one</option>
+        <option>two</option>
+        <option>three</option>
+        <option>four</option>
+        </select>
+        <button id="myButton">Select</button>
+        <script>
+        myButton.addEventListener("click", function(){
+            var choice = document.getElementById("list").value;
+            alert(choice);
+        }, false);
+        </script> 
+        -->
+    </body>
+    
+</html>
